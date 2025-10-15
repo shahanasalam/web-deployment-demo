@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahy Bee Travel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full z-30 bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-yellow-500">Shahy Bee Travel 🐝</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-yellow-500">Home</a>
+        <a href="#destinations" class="hover:text-yellow-500">Destinations</a>
+        <a href="#packages" class="hover:text-yellow-500">Packages</a>
+        <a href="#contact" class="hover:text-yellow-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white">
+    <div class="bg-black bg-opacity-50 p-8 rounded-2xl">
+      <h2 class="text-5xl font-bold mb-4">Explore the World with Shahy Bee 🐝</h2>
+      <p class="text-lg mb-6">Your adventure begins here — discover, dream, and travel with us.</p>
+      <a href="#destinations" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-full">
+        Start Your Journey
+      </a>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Popular Destinations</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Paris" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold">Paris, France</h4>
+            <p class="text-gray-600 mt-2">The city of lights, love, and art. Perfect for romantic getaways.</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Bali" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold">Bali, Indonesia</h4>
+            <p class="text-gray-600 mt-2">A tropical paradise filled with beaches, temples, and adventure.</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090" alt="New York" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold">New York, USA</h4>
+            <p class="text-gray-600 mt-2">The city that never sleeps — vibrant, iconic, and full of life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Exclusive Packages</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-2xl font-semibold mb-2">Romantic Getaway</h4>
+          <p class="text-gray-600 mb-4">3 nights in Paris + private dinner cruise.</p>
+          <p class="text-yellow-500 font-bold text-lg mb-4">$899</p>
+          <button class="bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-yellow-600">Book Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-2xl font-semibold mb-2">Adventure Seeker</h4>
+          <p class="text-gray-600 mb-4">7 days in Bali + snorkeling & hiking tours.</p>
+          <p class="text-yellow-500 font-bold text-lg mb-4">$1,299</p>
+          <button class="bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-yellow-600">Book Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-2xl font-semibold mb-2">City Explorer</h4>
+          <p class="text-gray-600 mb-4">5 days in New York + sightseeing bus pass.</p>
+          <p class="text-yellow-500 font-bold text-lg mb-4">$999</p>
+          <button class="bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-yellow-600">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Contact Us</h3>
+      <p class="mb-4 text-gray-600">Ready to book your next adventure? Reach out to our travel experts today!</p>
+      <form class="max-w-xl mx-auto text-left space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full border p-3 rounded-lg">
+        <input type="email" placeholder="Email Address" class="w-full border p-3 rounded-lg">
+        <textarea placeholder="Your Message" rows="4" class="w-full border p-3 rounded-lg"></textarea>
+        <button type="submit" class="bg-yellow-500 text-black font-semibold py-3 px-6 rounded-full w-full hover:bg-yellow-600">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 Shahy Bee Travel. All rights reserved. 🐝</p>
+  </footer>
+
+</body>
+</html>
